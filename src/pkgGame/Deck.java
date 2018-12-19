@@ -1,4 +1,8 @@
 package pkgGame;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 import pkgCards.eRank;
 import pkgCards.eSuit;
 
@@ -19,5 +23,11 @@ public class Deck {
 				spot++;
 			}
 		}
+	}
+	
+	public void shuffleDeck() {
+		ArrayList d = (ArrayList) Arrays.asList(deck);
+		Collections.shuffle(d);
+		this.deck = (Card[]) d.toArray();
 	}
 }

@@ -72,5 +72,72 @@ public class Solitaire {
 	public int getFullSets() {
 		return this.fullSets;
 	}
+	
+	public void addTwo() {
+		this.twos++;
+	}
+	
+	public void addThree() {
+		this.threes++;
+	}
+	
+	public void addFour() {
+		this.fours++;
+	}
+	
+	public void addFives() {
+		this.fives++;
+	}
+	
+	public void addSix() {
+		this.sixes++;
+	}
+	
+	public void addSeven() {
+		this.sevens++;
+	}
+	
+	public void addEight() {
+		this.eights++;
+	}
+	
+	public void addNine() {
+		this.nines++;
+	}
+	
+	public void addTen() {
+		this.tens++;
+	}
+	
+	public void addJack() {
+		this.jacks++;
+	}
+	
+	public void addQueen() {
+		this.queens++;
+	}
+	
+	public void addKing() {
+		this.kings++;
+	}
+	
+	public boolean gameOver() {
+		boolean go = false;
+		if (this.kings == 4) {
+			go = true;
+		}
+		return go;
+	}
+	
+	public boolean gameWon() {
+		boolean gw = false;
+		if (this.aces == 4 && this.twos == 4 && this.threes == 4 && this.fours == 4 && this.fives == 4 && this.sixes == 4 && this.sevens == 4 && this.eights == 4 && this.nines == 4 && this.tens == 4 && this.jacks == 4 && this.queens == 4) {
+			gw = true;
+		}
+		return gw;
+	}
+	
+	
+
 
 }
