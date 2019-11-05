@@ -10,14 +10,6 @@ public class Card {
 		this.eSuit = suit;
 	}
 	
-	private void setRank(pkgCards.eRank rank) {
-		this.eRank = rank;
-	}
-	
-	private void setSuit(pkgCards.eSuit suit) {
-		this.eSuit = suit;
-	}
-	
 	public pkgCards.eRank getRank(){
 		return this.eRank;
 	}
@@ -25,6 +17,7 @@ public class Card {
 	public pkgCards.eSuit getSuit(){
 		return this.eSuit;
 	}
+	
 	
 	
 
