@@ -42,5 +42,8 @@ public class CardTests {
 		assertTrue(deck.get(4).getRank().equals(eRank.QUEEN));
 		
 	}
+	
+	@Test
+	public void card_suit_sort_test()
 
 }
